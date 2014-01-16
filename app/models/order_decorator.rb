@@ -13,7 +13,7 @@ Spree::Order.class_eval do
     if !delivery_date.blank? && ['payment', 'confirm', 'complete'].include?(state)
       cutoff = Time.zone.now.change(hour: 16, min: 00) # Gets 4pm in EST time zone (config.time_zone)
 
-      if [0, 1, 7].include?(delivery_date.wday)
+      if [0, 7].include?(delivery_date.wday)
         errors.add(:delivery_date, I18n.t('activerecord.errors.models.spree/order.attributes.delivery_date.nor_monday_sunday'))
       end
 

@@ -8,7 +8,7 @@ es:
         spree/order:
           attributes:
             delivery_date:
-              nor_monday_sunday: no puede ser Domingo o Lunes
+              nor_monday_sunday: no puede ser Domingo
               too_late_tomorrow: es muy tarde para entregar mañana. Elige una fecha posterior.
               too_late_today: es muy tarde para entregar hoy.  Elige una fecha posterior.
   spree_delivery_date:
