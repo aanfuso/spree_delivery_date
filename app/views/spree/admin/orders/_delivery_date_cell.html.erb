@@ -1,5 +1,1 @@
-<% if order.delivery_date != nil %>
-  <td class="align-center"><%= order.delivery_date %></td>
-<% else %>
-  <td class="align-center">Unknown</td>
-<% end %>
+<td class="align-center"><%= (order.delivery_date != nil) ? l(order.delivery_date) : 'Unknown' %></td>
