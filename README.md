@@ -19,7 +19,7 @@ Add the gem to your Gemfile
 
 bundle with
 
-    $ bundle update
+    $ bundle
 
 and run
 
